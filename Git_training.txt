@@ -1,0 +1,43 @@
+git config --global user.name "sgavhane"
+git config --global user.name "Sonee"
+git config --global user.email "sachin.gavhane@zensar.com"
+
+Opening editor cmd
+git config --edit --global
+
+Settion up editor as default editor
+git config --global core.editor "code multiInst --nosession"
+
+Create file
+code README.md
+README.md file will automatically open in Visual Studio Editor
+I have added one line text and save and close..
+
+Shows Current status in directory that display README.md is untracked file
+git status
+
+Hence, need to add this file in directory using following code
+git add README.md
+
+After git status command git bash shows the file is not commited though it is now tracked
+Hence, use following code to commit. "My First Commit" is the msg to track what I had commited
+git commit -m "My First Commit"
+
+Following command is to add all new files in folder, without having untrack msg..
+git add .
+
+…or create a new repository on the command line
+echo "# first-repo" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/dsacheen/first-repo.git
+git push -u origin master
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/dsacheen/first-repo.git
+git push -u origin master
+
+SSH Key generate
+ssh-keygen -t rsa -b 4096 -C "sachin.gavhane@gmail.com"
+
